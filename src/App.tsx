@@ -236,7 +236,16 @@ const App = () => {
               title="LEXPGE 2.0"
               description={
                 <>
-                  Atuei como desenvolvedor front-end na criação do LEXPGE 2.0, a base oficial de consulta
+                  Atuei como desenvolvedor front-end na criação do {' '}
+                  <a
+                    href="https://lex.pge.pa.gov.br/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 underline hover:text-blue-800"
+                  >
+                    LEXPGE
+                  </a>.
+                  , a base oficial de consulta
                   legislativa do Estado do Pará. O projeto recebeu reconhecimento formal por meio de uma portaria
                   de elogio publicada no{' '}
                   <a
