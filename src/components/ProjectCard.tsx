@@ -1,19 +1,18 @@
+import type { ReactNode } from "react"
+
 interface ProjectCardProps {
   title: string
-  description: string
+  description: ReactNode
   technologies: string[]
   imageUrl: string
   demoUrl: string
-  codeUrl: string
 }
 
 const ProjectCard = ({ 
   title, 
   description, 
   technologies, 
-  imageUrl, 
-  demoUrl, 
-  codeUrl 
+  imageUrl,
 }: ProjectCardProps) => {
   return (
     <div className="bg-light dark:bg-dark rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow group">
@@ -37,20 +36,7 @@ const ProjectCard = ({
           ))}
         </div>
         
-        <div className="flex space-x-4">
-          <a 
-            href={demoUrl} 
-            className="px-4 py-2 bg-gradient-to-r from-primary to-secondary text-white rounded-lg text-sm hover:opacity-90 transition-opacity"
-          >
-            Demo
-          </a>
-          <a 
-            href={codeUrl} 
-            className="px-4 py-2 border border-primary text-primary dark:text-light rounded-lg text-sm hover:bg-primary/10 transition-colors"
-          >
-            Código
-          </a>
-        </div>
+      
       </div>
     </div>
   )

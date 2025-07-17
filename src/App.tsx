@@ -4,8 +4,9 @@ import ExperienceCard from './components/ExperienceCard'
 import ProjectCard from './components/ProjectCard'
 import SkillBadge from './components/SkillBadge'
 import SocialIcons from './components/SocialIcons'
-import ContactForm from './components/ContactForm'
-import AndersonPontes from './assets/profile-pic.png';
+import AndersonPontes from './assets/profile-pic.png'
+import LexPge from './assets/lex.png'
+import Sida from './assets/sida.png'
 
 
 
@@ -171,14 +172,14 @@ const App = () => {
                   title="Desenvolvedor Front-end"
                   company="Procuradoria-Geral do Estado do Pará"
                   period="2022 - Presente"
-                  description="Liderando a equipe front-end no desenvolvimento de aplicações web complexas."
+                  description="Desenvolvedor front-end de aplicações web modernas e robustas."
                 />
 
                 <ExperienceCard
-                  title="Desenvolvedor Front-end"
-                  company="Digital Agency"
-                  period="2018 - 2020"
-                  description="Desenvolvimento de interfaces para diversos clientes e setores."
+                  title="Gerente"
+                  company="Empresa Brasileira de Correios e Telegráfos"
+                  period="2013 - 2022"
+                  description="Responsável pela gestão operacional, administrativa e comercial da unidade"
                 />
               </div>
             </div>
@@ -196,7 +197,7 @@ const App = () => {
           <div className="mb-12">
             <h3 className="text-xl font-semibold mb-4">Tecnologias Principais</h3>
             <div className="flex flex-wrap gap-4">
-              {['React', 'TypeScript', 'JavaScript', 'Next.js', 'TailwindCSS', 'CSS3', 'HTML5'].map(skill => (
+              {['React', 'TypeScript', 'JavaScript', 'Next.js', 'TailwindCSS', 'UI/UX Design', 'CSS3', 'HTML5', 'Shadcn/ui', 'ZOD'].map(skill => (
                 <SkillBadge key={skill} skill={skill} level="advanced" />
               ))}
             </div>
@@ -205,7 +206,7 @@ const App = () => {
           <div className="mb-12">
             <h3 className="text-xl font-semibold mb-4">Ferramentas</h3>
             <div className="flex flex-wrap gap-4">
-              {['Git', 'VS Code', 'Figma', 'Webpack', 'Jest', 'Cypress', 'Node.js'].map(skill => (
+              {['Git', 'Docker', 'Figma', 'Webpack', 'Jest', 'PostgreSql', 'Node.js', "N8N"].map(skill => (
                 <SkillBadge key={skill} skill={skill} level="intermediate" />
               ))}
             </div>
@@ -214,7 +215,7 @@ const App = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4">Outras Habilidades</h3>
             <div className="flex flex-wrap gap-4">
-              {['UI/UX Design', 'SEO', 'Scrum', 'Responsive Design', 'Performance'].map(skill => (
+              {['SEO', 'Scrum', 'Java', 'Spring', 'Responsive Design', 'Performance'].map(skill => (
                 <SkillBadge key={skill} skill={skill} level="basic" />
               ))}
             </div>
@@ -231,31 +232,62 @@ const App = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ProjectCard
-              title="E-commerce Platform"
-              description="Plataforma de e-commerce completa com carrinho, checkout e painel administrativo."
-              technologies={['React', 'Node.js', 'MongoDB']}
-              imageUrl="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-              demoUrl="#"
-              codeUrl="#"
+              title="LEXPGE 2.0"
+              description={
+                <>
+                  Atuei como desenvolvedor front-end na criação do LEXPGE 2.0, a base oficial de consulta
+                  legislativa do Estado do Pará. O projeto recebeu reconhecimento formal por meio de uma portaria
+                  de elogio publicada no{' '}
+                  <a
+                    href="https://lex.pge.pa.gov.br/#/texto-integral/20560"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 underline hover:text-blue-800"
+                  >
+                    Diário Oficial
+                  </a>.
+                </>
+              }
+              technologies={['React', 'Tailwindcss', 'Shadcn/ui', 'Zod']}
+              imageUrl={LexPge}
+              demoUrl="https://lex.pge.pa.gov.br/"
+            />
+
+
+            <ProjectCard
+              title="SIDA - Sistema de Inteligência da Dívida Ativa"
+              description={
+                <>
+                  Contribuí significativamente para o desenvolvimento do sistema de gestão de Certidões de Dívida Ativa (CDAs), o que proporcionou um aumento de 300% no retorno financeiro sobre valores protestados. 
+                  A solução foi reconhecida com o Prêmio Inova PGE 2024, conforme portaria de elogio publicada no{' '}
+                  <a
+                    href="https://lex.pge.pa.gov.br/#/texto-integral/22767"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 underline hover:text-blue-800"
+                  >
+                    Diário Oficial
+                  </a>.
+                </>
+              }
+              technologies={['React', 'Tailwindcss', 'Shadcn/ui', 'Zod']}
+              imageUrl={Sida}
+              demoUrl="https://sida.pge.pa.gov.br/"
             />
 
             <ProjectCard
-              title="Task Management App"
-              description="Aplicativo para gerenciamento de tarefas com drag and drop e colaboração em tempo real."
-              technologies={['React', 'TypeScript', 'Firebase']}
-              imageUrl="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-              demoUrl="#"
-              codeUrl="#"
+              title="BuscaDOE"
+              description={
+                <>
+                  Contribuí no desenvolvimento do sistema de download e indexação diária do Diário Oficial do Estado em Elasticsearch.
+                  
+                </>
+              }
+              technologies={['React', 'Tailwindcss', 'Shadcn/ui', 'Zod']}
+              imageUrl={Sida}
+              demoUrl="X"
             />
 
-            <ProjectCard
-              title="Portfolio Template"
-              description="Template moderno e responsivo para portfólio de desenvolvedores."
-              technologies={['Next.js', 'TailwindCSS', 'Framer Motion']}
-              imageUrl="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-              demoUrl="#"
-              codeUrl="#"
-            />
           </div>
         </div>
       </section>
@@ -270,11 +302,7 @@ const App = () => {
           <div className="flex flex-col md:flex-row gap-12">
             <div className="md:w-1/2">
               <h3 className="text-2xl font-semibold mb-4">Entre em Contato</h3>
-              <p className="mb-6">
-                Estou interessado em oportunidades freelance, especialmente projetos ambiciosos ou grandes.
-                No entanto, se você tiver outra solicitação ou pergunta, não hesite em me contatar.
-              </p>
-
+              
               <div className="space-y-4">
                 <div className="flex items-center">
                   <div className="p-3 rounded-full bg-primary/10 text-primary mr-4">
@@ -282,7 +310,7 @@ const App = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </div>
-                  <span>contato@carlossilva.dev</span>
+                  <span>andersonpinheiro.developer@gmail.com</span>
                 </div>
 
                 <div className="flex items-center">
@@ -291,7 +319,7 @@ const App = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
                   </div>
-                  <span>+55 (11) 98765-4321</span>
+                  <span>(98) 98449-7970</span>
                 </div>
 
                 <div className="flex items-center">
@@ -301,18 +329,16 @@ const App = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
                   </div>
-                  <span>São Paulo, Brasil</span>
+                  <span>Belém, Brasil</span>
                 </div>
               </div>
 
-              <div className="mt-8">
-                <h4 className="text-xl font-semibold mb-4">Redes Sociais</h4>
-                <SocialIcons />
-              </div>
+              
             </div>
 
             <div className="md:w-1/2">
-              <ContactForm />
+             <h4 className="text-xl font-semibold mb-4">Redes Sociais</h4>
+              <SocialIcons/>
             </div>
           </div>
         </div>

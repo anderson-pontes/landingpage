@@ -1,9 +1,7 @@
 const SocialIcons = () => {
   const socials = [
-    { name: 'GitHub', url: '#', icon: 'github' },
-    { name: 'LinkedIn', url: '#', icon: 'linkedin' },
-    { name: 'Twitter', url: '#', icon: 'twitter' },
-    { name: 'Instagram', url: '#', icon: 'instagram' },
+    { name: 'GitHub', url: 'https://github.com/anderson-pontes/', icon: 'github' },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/andersonps-pontes/', icon: 'linkedin' },
   ]
 
   return (
