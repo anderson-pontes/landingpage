@@ -7,6 +7,7 @@ import SocialIcons from './components/SocialIcons'
 import AndersonPontes from './assets/profile-pic.png'
 import LexPge from './assets/lex.png'
 import Sida from './assets/sida.png'
+import BuscaDoe from './assets/buscadoe.png'
 
 
 
@@ -258,7 +259,7 @@ const App = () => {
               title="SIDA - Sistema de Inteligência da Dívida Ativa"
               description={
                 <>
-                  Contribuí significativamente para o desenvolvimento do sistema de gestão de Certidões de Dívida Ativa (CDAs), o que proporcionou um aumento de 300% no retorno financeiro sobre valores protestados. 
+                  Contribuí significativamente para o desenvolvimento front-end do sistema de gestão de Certidões de Dívida Ativa (CDAs), o que proporcionou um aumento de 300% no retorno financeiro sobre valores protestados. 
                   A solução foi reconhecida com o Prêmio Inova PGE 2024, conforme portaria de elogio publicada no{' '}
                   <a
                     href="https://lex.pge.pa.gov.br/#/texto-integral/22767"
@@ -279,12 +280,12 @@ const App = () => {
               title="BuscaDOE"
               description={
                 <>
-                  Contribuí no desenvolvimento do sistema de download e indexação diária do Diário Oficial do Estado em Elasticsearch.
+                  Contribuí no desenvolvimento front-end do sistema de download e indexação diária do Diário Oficial do Estado em Elasticsearch.
                   
                 </>
               }
               technologies={['React', 'Tailwindcss', 'Shadcn/ui', 'Zod']}
-              imageUrl={Sida}
+              imageUrl={BuscaDoe}
               demoUrl="X"
             />
 
