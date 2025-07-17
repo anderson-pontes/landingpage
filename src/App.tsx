@@ -5,6 +5,9 @@ import ProjectCard from './components/ProjectCard'
 import SkillBadge from './components/SkillBadge'
 import SocialIcons from './components/SocialIcons'
 import ContactForm from './components/ContactForm'
+import AndersonPontes from './assets/profile-pic.png';
+
+
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('home')
@@ -12,7 +15,7 @@ const App = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'sobre', 'skills', 'projetos', 'contact']
+      const sections = ['home', 'sobre', 'skills', 'projetos', 'contato']
       const scrollPosition = window.scrollY + 100
 
       for (const section of sections) {
@@ -49,7 +52,7 @@ const App = () => {
           <a href="#" className="text-2xl font-bold gradient-text">DEV</a>
 
           <div className="hidden md:flex space-x-8">
-            {['home', 'sobre', 'skills', 'projetos', 'contact'].map((item) => (
+            {['home', 'sobre', 'skills', 'projetos', 'contato'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
@@ -74,7 +77,7 @@ const App = () => {
 
         {menuOpen && (
           <div className="md:hidden bg-light dark:bg-dark px-6 py-4 space-y-4">
-            {['home', 'sobre', 'skills', 'projetos', 'contact'].map((item) => (
+            {['home', 'sobre', 'skills', 'projetos', 'contato'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
@@ -99,11 +102,11 @@ const App = () => {
             </h1>
             <AnimatedText text="Desenvolvedor Front-end" className="text-2xl md:text-4xl mb-6" />
             <p className="text-lg mb-8 text-dark/80 dark:text-light/80">
-              Criando experiências digitais incríveis com React, TypeScript e designs modernos.
+              Criando experiências digitais incríveis com React, NextJs, TypeScript e designs modernos.
             </p>
             <div className="flex space-x-4">
               <button
-                onClick={() => scrollToSection('contact')}
+                onClick={() => scrollToSection('contato')}
                 className="px-6 py-3 bg-gradient-to-r from-primary to-secondary text-white rounded-lg hover:opacity-90 transition-opacity"
               >
                 Contate-me
@@ -122,14 +125,12 @@ const App = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-full blur-xl opacity-20 animate-pulse"></div>
               <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-light dark:border-dark shadow-xl">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                  src={AndersonPontes}
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-5 left-1/2 transform -translate-x-1/2 bg-dark dark:bg-light text-light dark:text-dark px-4 py-2 rounded-full shadow-lg">
-                <span className="font-medium">Disponível para freelances</span>
-              </div>
+
             </div>
           </div>
         </div>
@@ -155,22 +156,21 @@ const App = () => {
 
             <div className="md:w-2/3 md:pl-12">
               <p className="text-lg mb-6">
-                Sou um desenvolvedor front-end apaixonado por criar interfaces bonitas e funcionais.
-                Com mais de 5 anos de experiência, transformo ideias em realidade digital com código limpo
-                e designs responsivos.
+                Sou Desenvolvedor Front-End com sólida experiência na criação de aplicações web modernas, robustas e eficientes. Atualmente, estou contribuindo com a modernização tecnológica na Procuradoria-Geral do Estado do Pará (PGE-PA).
               </p>
+              <p className="text-lg mb-6">Graduado em Análise e Desenvolvimento de Sistemas e Pós-Graduado em Engenharia de Software e Informática na Educação. Tenho forte domínio no ecossistema React/Next.js com TypeScript/Javascript.</p>
 
               <p className="text-lg mb-6">
-                Minha jornada começou quando eu era adolescente, mexendo com HTML e CSS para personalizar
-                blogs. Desde então, evolui para frameworks modernos como React e Vue, sempre buscando
-                aprender as melhores práticas e tecnologias.
+                Trabalho com ferramentas como TailwindCSS, Shadcn/ui e Zod, desenvolvendo interfaces intuitivas, acessíveis e de alta performance, sempre com foco na qualidade do código e na melhor experiência do usuário.
               </p>
+
+              <p className="text-lg mb-6">Sou um profissional orientado a resultados, assíduo e comprometido com a otimização de processos e a colaboração em equipe. Busco constantemente aprimorar minhas habilidades e aplicar meus conhecimentos para gerar valor.</p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
                 <ExperienceCard
-                  title="Desenvolvedor Front-end Sênior"
-                  company="Tech Solutions Inc."
-                  period="2020 - Presente"
+                  title="Desenvolvedor Front-end"
+                  company="Procuradoria-Geral do Estado do Pará"
+                  period="2022 - Presente"
                   description="Liderando a equipe front-end no desenvolvimento de aplicações web complexas."
                 />
 
@@ -261,7 +261,7 @@ const App = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20">
+      <section id="contato" className="py-20">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
             <span className="gradient-text">Vamos Trabalhar Juntos</span>
