@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-light dark:bg-dark text-dark dark:text-light transition-colors duration-300;
+  }
+}
+
+.gradient-text {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary;
+}
