@@ -430,14 +430,14 @@ const App = () => {
                                                 viewport={{ once: true }}
                                                 transition={{ delay: index * 0.1 }}
                                                 whileHover={{ x: 10 }}
-                                                className="flex items-center gap-4 group"
+                                                className="flex items-start gap-4 group"
                                             >
-                                                <div className={`p-3 rounded-xl bg-slate-800/50 border border-slate-700 ${item.color} group-hover:border-cyan-500/50 transition-all`}>
+                                                <div className={`p-3 rounded-xl bg-slate-800/50 border border-slate-700 ${item.color} group-hover:border-cyan-500/50 transition-all flex-shrink-0`}>
                                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={item.icon} />
                                                     </svg>
                                                 </div>
-                                                <span className="text-slate-300">{item.text}</span>
+                                                <span className="text-slate-300 break-all text-sm sm:text-base">{item.text}</span>
                                             </motion.div>
                                         ))}
                                     </div>
