@@ -1,69 +1,86 @@
-# React + TypeScript + Vite
+# 🚀 Portfólio Anderson Pontes - Desenvolvedor Front-end
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfólio moderno e tecnológico desenvolvido com React, TypeScript, TailwindCSS e Framer Motion.
 
-Currently, two official plugins are available:
+## ✨ Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   🎨 **Design Moderno**: Interface tech/cyberpunk com gradientes vibrantes
+-   🌊 **Animações Fluidas**: Transições suaves com Framer Motion
+-   ⚡ **Performance**: Otimizado com Vite e React 19
+-   📱 **Responsivo**: Layout adaptável para todos os dispositivos
+-   🎭 **Efeitos Visuais**: Partículas animadas, glow effects e micro-interações
+-   🎯 **Navegação Suave**: Scroll suave entre seções com indicador ativo
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologias
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+-   **React 19** - Biblioteca JavaScript para interfaces
+-   **TypeScript** - Tipagem estática
+-   **Vite** - Build tool ultrarrápido
+-   **TailwindCSS** - Framework CSS utility-first
+-   **Framer Motion** - Biblioteca de animações
+-   **Font Awesome** - Ícones
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🎨 Componentes Criados
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+-   `AnimatedSection` - Seções com animação de entrada
+-   `AnimatedText` - Texto com efeito de digitação
+-   `ParticlesBackground` - Fundo com partículas animadas
+-   `GlowCard` - Cards com efeito de brilho ao hover
+-   `ExperienceCard` - Cards de experiência profissional
+-   `ProjectCard` - Cards de projetos com hover effects
+-   `SkillBadge` - Badges de habilidades com barra de progresso
+-   `SocialIcons` - Ícones de redes sociais animados
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🚀 Como Executar
+
+```bash
+# Instalar dependências
+npm install
+
+# Executar em desenvolvimento
+npm run dev
+
+# Build para produção
+npm run build
+
+# Preview da build
+npm run preview
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📂 Estrutura do Projeto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+src/
+├── components/          # Componentes reutilizáveis
+│   ├── AnimatedSection.tsx
+│   ├── AnimatedText.tsx
+│   ├── ParticlesBackground.tsx
+│   ├── GlowCard.tsx
+│   ├── ExperienceCard.tsx
+│   ├── ProjectCard.tsx
+│   ├── SkillBadge.tsx
+│   └── SocialIcons.tsx
+├── assets/             # Imagens e recursos
+├── App.tsx             # Componente principal
+├── main.tsx            # Entry point
+└── index.css           # Estilos globais
+```
+
+## 🎯 Seções
+
+1. **Home** - Apresentação com foto e call-to-actions
+2. **Sobre** - Informações profissionais e experiências
+3. **Skills** - Habilidades técnicas organizadas por nível
+4. **Projetos** - Portfólio de projetos desenvolvidos
+5. **Contato** - Informações de contato e redes sociais
+
+## 🎨 Paleta de Cores
+
+-   **Primary**: Cyan (#06b6d4)
+-   **Secondary**: Purple (#8b5cf6)
+-   **Accent**: Pink (#ec4899)
+-   **Background**: Slate (#0f172a)
+
+## 📝 Licença
+
+© 2025 Anderson Pontes. Todos os direitos reservados.
