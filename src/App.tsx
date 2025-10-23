@@ -13,6 +13,7 @@ import AndersonPontes from './assets/profile-pic.png'
 import LexPge from './assets/lex.png'
 import Sida from './assets/sida.png'
 import BuscaDoe from './assets/buscadoe.png'
+import Sigescon from './assets/sigescon.png'
 
 const App = () => {
     const [activeSection, setActiveSection] = useState('home')
@@ -233,36 +234,43 @@ const App = () => {
                         </h2>
                     </AnimatedSection>
 
-                    <div className="flex flex-col md:flex-row items-center gap-12">
-                        <AnimatedSection className="md:w-1/3" delay={0.2}>
-                            <motion.div
-                                whileHover={{ scale: 1.05, rotate: 2 }}
-                                className="relative group"
-                            >
-                                <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-2xl blur opacity-50 group-hover:opacity-100 transition duration-500" />
-                                <div className="relative w-full h-80 rounded-2xl overflow-hidden border-2 border-cyan-500/50">
-                                    <img
-                                        src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-                                        alt="Working"
-                                        className="w-full h-full object-cover"
-                                    />
-                                </div>
-                            </motion.div>
-                        </AnimatedSection>
-
-                        <AnimatedSection className="md:w-2/3" delay={0.4}>
+                    <div className="flex flex-col gap-12">
+                        <AnimatedSection delay={0.2}>
                             <div className="space-y-6 text-slate-300 leading-relaxed">
                                 <p className="text-lg">
-                                    Sou <span className="text-cyan-400 font-semibold">Desenvolvedor Front-End</span> com sólida experiência na criação de aplicações web modernas, robustas e eficientes. Atualmente, estou contribuindo com a modernização tecnológica na <span className="text-purple-400 font-semibold">Procuradoria-Geral do Estado do Pará (PGE-PA)</span>.
+                                    Sou <span className="text-cyan-400 font-semibold">Desenvolvedor Front-End</span> com experiência na criação de aplicações web robustas e eficientes, atualmente contribuindo com a modernização tecnológica na <span className="text-purple-400 font-semibold">Procuradoria-Geral do Estado do Pará (PGE-PA)</span>.
                                 </p>
                                 <p className="text-lg">
-                                    Graduado em <span className="text-cyan-400">Análise e Desenvolvimento de Sistemas</span> e Pós-Graduado em <span className="text-purple-400">Engenharia de Software</span> e <span className="text-pink-400">Informática na Educação</span>. Tenho forte domínio no ecossistema React/Next.js com TypeScript/Javascript.
+                                    Graduado em <span className="text-cyan-400">Análise e Desenvolvimento de Sistemas</span> pela Estácio de Sá e Pós-Graduado em <span className="text-purple-400">Engenharia de Software</span> e <span className="text-pink-400">Informática na Educação</span>. No momento, estou cursando <span className="text-cyan-400 font-semibold">MBA em Data Science e Analytics</span> pela USP/Esalq.
                                 </p>
                                 <p className="text-lg">
-                                    Trabalho com ferramentas como <span className="text-cyan-400">TailwindCSS</span>, <span className="text-purple-400">Shadcn/ui</span> e <span className="text-pink-400">Zod</span>, desenvolvendo interfaces intuitivas, acessíveis e de alta performance, sempre com foco na qualidade do código e na melhor experiência do usuário.
+                                    Minha expertise principal reside no ecossistema <span className="text-cyan-400">React/Next.js</span> com <span className="text-blue-400">TypeScript</span>, utilizando ferramentas como <span className="text-purple-400">TailwindCSS</span>, <span className="text-pink-400">Shadcn/ui</span> e <span className="text-cyan-400">Zod</span> para entregar interfaces intuitivas e performáticas.
                                 </p>
+
+                                <div className="mt-8 p-6 bg-slate-800/30 border border-slate-700/50 rounded-xl">
+                                    <h4 className="text-xl font-bold text-cyan-400 mb-4">Principais Realizações na PGE-PA</h4>
+                                    <ul className="space-y-3 text-base">
+                                        <li className="flex items-start gap-2">
+                                            <span className="text-cyan-400 mt-1">▸</span>
+                                            <span><span className="font-semibold text-purple-400">LEXPGE 2.0:</span> Desenvolvedor front-end na criação da base oficial de consulta legislativa do Estado do Pará. Trabalho reconhecido com portaria de elogio no Diário Oficial.</span>
+                                        </li>
+                                        <li className="flex items-start gap-2">
+                                            <span className="text-cyan-400 mt-1">▸</span>
+                                            <span><span className="font-semibold text-purple-400">SIDA:</span> Participação ativa no desenvolvimento do sistema de gestão de CDAs, resultando em aumento de 300% no retorno sobre valores protestados. Conquistou o Prêmio Inova PGE 2024.</span>
+                                        </li>
+                                        <li className="flex items-start gap-2">
+                                            <span className="text-cyan-400 mt-1">▸</span>
+                                            <span><span className="font-semibold text-purple-400">BuscaDOE:</span> Contribuição no desenvolvimento do sistema de download e indexação diária do Diário Oficial do Estado em Elasticsearch.</span>
+                                        </li>
+                                        <li className="flex items-start gap-2">
+                                            <span className="text-cyan-400 mt-1">▸</span>
+                                            <span><span className="font-semibold text-purple-400">SIGESCON:</span> Desenvolvedor front-end na criação do Sistema de Gestão de Contratos da PGE/PA.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
                                 <p className="text-lg">
-                                    Sou um profissional orientado a resultados, assíduo e comprometido com a otimização de processos e a colaboração em equipe. Busco constantemente aprimorar minhas habilidades e aplicar meus conhecimentos para gerar valor.
+                                    Sou um profissional orientado a resultados, assíduo e comprometido com a otimização de processos e a colaboração em equipe. Profissional autodidata e dedicado, com sólida formação técnica e uma abordagem analítica para o desenvolvimento de software. Possuo habilidades para identificar necessidades do usuário e propor soluções tecnológicas inovadoras, aliando conhecimento em data science para potencializar a tomada de decisões baseadas em dados.
                                 </p>
                             </div>
 
@@ -296,10 +304,21 @@ const App = () => {
 
                     <GlowCard className="mb-12" delay={0.2}>
                         <div className="p-8">
-                            <h3 className="text-2xl font-bold mb-6 text-cyan-400">Tecnologias Principais</h3>
+                            <h3 className="text-2xl font-bold mb-6 text-cyan-400">Front-End</h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                {['React', 'TypeScript', 'JavaScript', 'Next.js', 'TailwindCSS', 'UI/UX Design', 'CSS3', 'HTML5', 'Shadcn/ui', 'ZOD'].map(skill => (
+                                {['React', 'Next.js', 'TypeScript', 'JavaScript', 'TailwindCSS', 'Shadcn/ui', 'Zod', 'HTML5', 'CSS3'].map(skill => (
                                     <SkillBadge key={skill} skill={skill} level="advanced" />
+                                ))}
+                            </div>
+                        </div>
+                    </GlowCard>
+
+                    <GlowCard className="mb-12" delay={0.3}>
+                        <div className="p-8">
+                            <h3 className="text-2xl font-bold mb-6 text-purple-400">DevOps & Infraestrutura</h3>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                {['Docker', 'Git', 'GitHub', 'CI/CD'].map(skill => (
+                                    <SkillBadge key={skill} skill={skill} level="intermediate" />
                                 ))}
                             </div>
                         </div>
@@ -307,21 +326,21 @@ const App = () => {
 
                     <GlowCard className="mb-12" delay={0.4}>
                         <div className="p-8">
-                            <h3 className="text-2xl font-bold mb-6 text-purple-400">Ferramentas</h3>
+                            <h3 className="text-2xl font-bold mb-6 text-pink-400">Back-End & Banco de Dados</h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                {['Git', 'Docker', 'Figma', 'Webpack', 'Jest', 'PostgreSQL', 'Node.js', "N8N"].map(skill => (
+                                {['Node.js', 'Java', 'Spring', 'Firebase', 'PostgreSQL', 'MySQL', 'REST API'].map(skill => (
                                     <SkillBadge key={skill} skill={skill} level="intermediate" />
                                 ))}
                             </div>
                         </div>
                     </GlowCard>
 
-                    <GlowCard delay={0.6}>
+                    <GlowCard delay={0.5}>
                         <div className="p-8">
-                            <h3 className="text-2xl font-bold mb-6 text-pink-400">Outras Habilidades</h3>
+                            <h3 className="text-2xl font-bold mb-6 text-cyan-400">Ferramentas & Metodologias</h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                {['SEO', 'Scrum', 'Java', 'Spring', 'Responsive Design', 'Performance'].map(skill => (
-                                    <SkillBadge key={skill} skill={skill} level="basic" />
+                                {['IntelliJ IDEA', 'VS Code', 'Postman', 'Figma', 'Scrum', 'N8N'].map(skill => (
+                                    <SkillBadge key={skill} skill={skill} level="intermediate" />
                                 ))}
                             </div>
                         </div>
@@ -365,7 +384,7 @@ const App = () => {
                                     </a>.
                                 </>
                             }
-                            technologies={['React', 'Tailwindcss', 'Shadcn/ui', 'Zod']}
+                            technologies={['React', 'TypeScript', 'Tailwindcss', 'Shadcn/ui', 'Zod']}
                             imageUrl={LexPge}
                             demoUrl="https://lex.pge.pa.gov.br/"
                         />
@@ -386,7 +405,7 @@ const App = () => {
                                     </a>.
                                 </>
                             }
-                            technologies={['React', 'Tailwindcss', 'Shadcn/ui', 'Zod']}
+                            technologies={['React', 'TypeScript', 'Tailwindcss', 'Shadcn/ui', 'Zod']}
                             imageUrl={Sida}
                             demoUrl="https://sida.pge.pa.gov.br/"
                         />
@@ -394,8 +413,16 @@ const App = () => {
                         <ProjectCard
                             title="BuscaDOE"
                             description="Contribuí no desenvolvimento front-end do sistema de download e indexação diária do Diário Oficial do Estado em Elasticsearch."
-                            technologies={['React', 'Tailwindcss', 'Shadcn/ui', 'Zod']}
+                            technologies={['React', 'TypeScript', 'Tailwindcss', 'Shadcn/ui', 'Zod']}
                             imageUrl={BuscaDoe}
+                            demoUrl="X"
+                        />
+
+                         <ProjectCard
+                            title="SIGESCON"
+                            description="Atuei como desenvolvedor front-end na criação do Sistema de Gestão de Contratos da PGE/PA."
+                            technologies={['React', 'TypeScript','Tailwindcss', 'Shadcn/ui', 'Zod']}
+                            imageUrl={Sigescon}
                             demoUrl="X"
                         />
                     </div>
