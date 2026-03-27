@@ -1,45 +1,37 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
-        primary: "#06b6d4",
-        secondary: "#8b5cf6",
-        accent: "#ec4899",
-        dark: "#0f172a",
-        light: "#f8fafc",
+        surface: {
+          base: '#0A0A0A',
+          1: '#141414',
+          2: '#1C1C1C',
+          3: '#242424',
+          border: '#2E2E2E',
+        },
+        accent: {
+          DEFAULT: '#F59E0B',
+          light: '#FCD34D',
+        },
+        ink: {
+          primary: '#F0EFEB',
+          secondary: '#9CA3AF',
+          muted: '#6B7280',
+        },
       },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        display: ['"DM Serif Display"', 'Georgia', 'serif'],
+        mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
       },
       animation: {
-        "float": "float 6s ease-in-out infinite",
-        "fade-in": "fadeIn 1.5s ease-in-out",
-        "slide-in": "slideIn 0.5s ease-out",
-        "pulse-glow": "pulseGlow 2s ease-in-out infinite",
-        "spin-slow": "spin 8s linear infinite",
+        'badge-pulse': 'badgePulse 2.5s ease-in-out infinite',
       },
       keyframes: {
-        float: {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-20px)" },
-        },
-        fadeIn: {
-          "0%": { opacity: "0" },
-          "100%": { opacity: "1" },
-        },
-        slideIn: {
-          "0%": { opacity: "0", transform: "translateY(30px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" },
-        },
-        pulseGlow: {
-          "0%, 100%": { opacity: "0.5" },
-          "50%": { opacity: "1" },
+        badgePulse: {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.4' },
         },
       },
     },
